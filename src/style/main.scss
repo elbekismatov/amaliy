@@ -1,36 +1,126 @@
 @import "./reset";
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
   .container {
-    max-width: 1110px;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    .left-part {
-
-      img {
-        margin-bottom: 28px;
-        max-width: 730px;
-      }
-      .left-part-bottom {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        h1 {
-          //styleName: Heading (XL);
-          font-family: Inter;
-          font-size: 56px;
-          font-weight: 800;
-          line-height: 56px;
-          text-align: left;
-          color: #00001a;
-          max-width: 350px;
+    max-width: 1142px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  header {
+    padding: 80px 0 55px;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      nav {
+        width: 100%;
+        max-width: 431px;
+        ul {
+          display: flex;
+          justify-content: space-between;
+          img {
+            display: none;
+          }
         }
-        .left-part-bottom-right {
-          max-width: 350px;
+      }
+    }
+  }
+  section {
+    margin-bottom: 71px;
+    .container {
+      display: flex;
+
+      gap: 30px;
+      .left-part {
+        max-width: 730px;
+
+        width: 100%;
+        img {
+          margin-bottom: 28px;
+          max-width: 730px;
+
+          width: 100%;
+        }
+        .left-part-bottom {
+          display: flex;
+          gp: 30px;
+          align-items: center;
+          h1 {
+            //styleName: Heading (XL);
+            font-family: Inter;
+            font-size: 56px;
+            font-weight: 800;
+            line-height: 56px;
+            text-align: left;
+            color: #00001a;
+            max-width: 350px;
+          }
+          .left-part-bottom-right {
+            max-width: 350px;
+            p {
+              //styleName: Body;
+              font-family: Inter;
+              font-size: 15px;
+              font-weight: 400;
+              line-height: 26px;
+              text-align: left;
+              color: #5e607a;
+              margin-bottom: 29px;
+            }
+            button {
+              padding: 13px 31px;
+              background: #f15d51;
+              border: none;
+              font-family: Inter;
+              font-size: 14px;
+              font-weight: 700;
+              line-height: 24px;
+              letter-spacing: 4.375px;
+              text-align: left;
+              color: #fffdfa;
+              cursor: pointer;
+              transition-duration: 2s;
+              &:hover {
+                background: #00001a;
+              }
+            }
+          }
+        }
+      }
+      .container-right-part {
+        width: 100%;
+        max-width: 350px;
+        background: #00001a;
+
+        padding: 32px 24px;
+        h2 {
+          //styleName: Heading (L);
+          font-family: Inter;
+          font-size: 40px;
+          font-weight: 700;
+          line-height: 40px;
+          text-align: left;
+          color: #e9aa52;
+          margin-bottom: 34px;
+        }
+        .cards {
+          margin-bottom: 29px;
+          h3 {
+            //styleName: Heading (S);
+            font-family: Inter;
+            font-size: 20px;
+            font-weight: 800;
+            line-height: 24px;
+            text-align: left;
+            color: #fffdfa;
+            margin-bottom: 8px;
+            cursor: pointer;
+            transition-duration: 2s;
+            &:hover {
+              color: #e9aa52;
+            }
+          }
           p {
             //styleName: Body;
             font-family: Inter;
@@ -38,62 +128,237 @@ body {
             font-weight: 400;
             line-height: 26px;
             text-align: left;
-            color: #5e607a;
-            margin-bottom: 29px;
+            color: #c5c6ce;
           }
-          button {
-            padding: 13px 31px;
-            background: #f15d51;
-            border: none;
-            font-family: Inter;
-            font-size: 14px;
-            font-weight: 700;
-            line-height: 24px;
-            letter-spacing: 4.375px;
-            text-align: left;
-            color: #fffdfa;
-            cursor: pointer;
-            transition-duration: 2s;
-            &:hover{
-                background: #00001A;
+        }
+        .line {
+          margin-bottom: 31px;
+        }
+        .card {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+section {
+  margin-bottom: 129px;
+  .container {
+    display: flex;
+    .parts {
+      max-width: 350px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      img {
+        width: 100px;
+        height: 127px;
+      }
+      .information {
+        h2 {
+          //styleName: Heading (M);
+          font-family: Inter;
+          font-size: 32px;
+          font-weight: 700;
+          line-height: 32px;
+          text-align: left;
+          color: #c5c6ce;
+          margin-bottom: 12px;
+        }
+        h3 {
+          font-family: Inter;
+          font-size: 18px;
+          font-weight: 800;
+          line-height: 24px;
+          text-align: left;
+          color: #00001a;
+          cursor: pointer;
+          transition-duration: 1s;
+          &:hover {
+            color: #f15d51;
+          }
+        }
+      }
 
+      p {
+        //styleName: Body;
+        font-family: Inter;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: left;
+        color: #5e607a;
+      }
+    }
+  }
+}
+@media (max-width: 1030px) {
+  body {
+    min-height: 100vh;
+    .container {
+      width: 100%;
+      max-width: 343px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+    header {
+      padding: 28px 0 32px;
+      .container {
+        nav {
+          max-width: 40px;
+          ul {
+            li {
+              display: none;
+            }
+            img {
+              display: block;
             }
           }
         }
       }
     }
-    .container-right-part {
-      max-width: 350px;
-      background: #00001a;
+    section {
+      margin-bottom: 64px;
+      .container {
+        flex-direction: column;
 
-      padding: 32px 24px;
-      h2 {
-        //styleName: Heading (L);
-        font-family: Inter;
-        font-size: 40px;
-        font-weight: 700;
-        line-height: 40px;
-        text-align: left;
-        color: #e9aa52;
-        margin-bottom: 34px;
-      }
-      .cards {
-        margin-bottom: 29px;
-        h3 {
-          //styleName: Heading (S);
-          font-family: Inter;
-          font-size: 20px;
-          font-weight: 800;
-          line-height: 24px;
-          text-align: left;
-          color: #fffdfa;
-          margin-bottom: 8px;
-          cursor: pointer;
-          transition-duration: 2s;
-          &:hover{
-            color: #E9AA52;
+        .left-part {
+          max-width: 343px;
+margin-bottom: 64px;
+          width: 100%;
+          img {
+            margin-bottom: 24px;
+            max-width: 343px;
+            height: 300px;
+            object-fit: cover;
+          }
+          .left-part-bottom {
+            display: flex;
+            gap: 30px;
+            flex-direction: column;
+            align-items: center;
+            h1 {
+              font-family: Inter;
+              font-size: 40px;
+              font-weight: 800;
+              line-height: 40px;
+              text-align: left;
+              margin-bottom: 10px;
+            }
+            .left-part-bottom-right {
+              max-width: 350px;
+              p {
+                font-family: Inter;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 26px;
+                text-align: left;
+
+                margin-bottom: 24px;
+              }
+              button {
+                padding: 13px 31px;
+                font-family: Inter;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 24px;
+                letter-spacing: 4.375px;
+              }
+            }
           }
         }
+        .container-right-part {
+          width: 100%;
+          max-width: 350px;
+          background: #00001a;
+
+          padding: 32px 24px;
+          h2 {
+            //styleName: Heading (L);
+            font-family: Inter;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 40px;
+            text-align: left;
+            color: #e9aa52;
+            margin-bottom: 34px;
+          }
+          .cards {
+            margin-bottom: 29px;
+            h3 {
+              //styleName: Heading (S);
+              font-family: Inter;
+              font-size: 20px;
+              font-weight: 800;
+              line-height: 24px;
+              text-align: left;
+              color: #fffdfa;
+              margin-bottom: 8px;
+              cursor: pointer;
+              transition-duration: 2s;
+              &:hover {
+                color: #e9aa52;
+              }
+            }
+            p {
+              //styleName: Body;
+              font-family: Inter;
+              font-size: 15px;
+              font-weight: 400;
+              line-height: 26px;
+              text-align: left;
+              color: #c5c6ce;
+            }
+          }
+          .line {
+            margin-bottom: 31px;
+          }
+          .card {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  section {
+    margin-bottom: 129px;
+    .container {
+      display: flex;
+      .parts {
+        max-width: 350px;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        img {
+          width: 100px;
+          height: 127px;
+        }
+        .information {
+          h2 {
+            //styleName: Heading (M);
+            font-family: Inter;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 32px;
+            text-align: left;
+            color: #c5c6ce;
+            margin-bottom: 12px;
+          }
+          h3 {
+            font-family: Inter;
+            font-size: 18px;
+            font-weight: 800;
+            line-height: 24px;
+            text-align: left;
+            color: #00001a;
+            cursor: pointer;
+            transition-duration: 1s;
+            &:hover {
+              color: #f15d51;
+            }
+          }
+        }
+
         p {
           //styleName: Body;
           font-family: Inter;
@@ -101,14 +366,8 @@ body {
           font-weight: 400;
           line-height: 26px;
           text-align: left;
-          color: #c5c6ce;
+          color: #5e607a;
         }
-      }
-      .line{
-        margin-bottom: 31px;
-      }
-      .card{
-        margin-bottom: 0;
       }
     }
   }

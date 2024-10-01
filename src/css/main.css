@@ -6,33 +6,27 @@
           box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul li, ol li {
+  list-style: none;
+}
+
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   min-height: 100vh;
 }
 body .container {
-  max-width: 1110px;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  max-width: 1142px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
-body .container .left-part img {
-  margin-bottom: 28px;
-  max-width: 730px;
+body header {
+  padding: 80px 0 55px;
 }
-body .container .left-part .left-part-bottom {
+body header .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,7 +37,49 @@ body .container .left-part .left-part-bottom {
       -ms-flex-align: center;
           align-items: center;
 }
-body .container .left-part .left-part-bottom h1 {
+body header .container nav {
+  width: 100%;
+  max-width: 431px;
+}
+body header .container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body header .container nav ul img {
+  display: none;
+}
+body section {
+  margin-bottom: 71px;
+}
+body section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+body section .container .left-part {
+  max-width: 730px;
+  width: 100%;
+}
+body section .container .left-part img {
+  margin-bottom: 28px;
+  max-width: 730px;
+  width: 100%;
+}
+body section .container .left-part .left-part-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gp: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body section .container .left-part .left-part-bottom h1 {
   font-family: Inter;
   font-size: 56px;
   font-weight: 800;
@@ -52,10 +88,10 @@ body .container .left-part .left-part-bottom h1 {
   color: #00001a;
   max-width: 350px;
 }
-body .container .left-part .left-part-bottom .left-part-bottom-right {
+body section .container .left-part .left-part-bottom .left-part-bottom-right {
   max-width: 350px;
 }
-body .container .left-part .left-part-bottom .left-part-bottom-right p {
+body section .container .left-part .left-part-bottom .left-part-bottom-right p {
   font-family: Inter;
   font-size: 15px;
   font-weight: 400;
@@ -64,7 +100,7 @@ body .container .left-part .left-part-bottom .left-part-bottom-right p {
   color: #5e607a;
   margin-bottom: 29px;
 }
-body .container .left-part .left-part-bottom .left-part-bottom-right button {
+body section .container .left-part .left-part-bottom .left-part-bottom-right button {
   padding: 13px 31px;
   background: #f15d51;
   border: none;
@@ -79,15 +115,16 @@ body .container .left-part .left-part-bottom .left-part-bottom-right button {
   -webkit-transition-duration: 2s;
           transition-duration: 2s;
 }
-body .container .left-part .left-part-bottom .left-part-bottom-right button:hover {
-  background: #00001A;
+body section .container .left-part .left-part-bottom .left-part-bottom-right button:hover {
+  background: #00001a;
 }
-body .container .container-right-part {
+body section .container .container-right-part {
+  width: 100%;
   max-width: 350px;
   background: #00001a;
   padding: 32px 24px;
 }
-body .container .container-right-part h2 {
+body section .container .container-right-part h2 {
   font-family: Inter;
   font-size: 40px;
   font-weight: 700;
@@ -96,10 +133,10 @@ body .container .container-right-part h2 {
   color: #e9aa52;
   margin-bottom: 34px;
 }
-body .container .container-right-part .cards {
+body section .container .container-right-part .cards {
   margin-bottom: 29px;
 }
-body .container .container-right-part .cards h3 {
+body section .container .container-right-part .cards h3 {
   font-family: Inter;
   font-size: 20px;
   font-weight: 800;
@@ -111,10 +148,10 @@ body .container .container-right-part .cards h3 {
   -webkit-transition-duration: 2s;
           transition-duration: 2s;
 }
-body .container .container-right-part .cards h3:hover {
-  color: #E9AA52;
+body section .container .container-right-part .cards h3:hover {
+  color: #e9aa52;
 }
-body .container .container-right-part .cards p {
+body section .container .container-right-part .cards p {
   font-family: Inter;
   font-size: 15px;
   font-weight: 400;
@@ -122,9 +159,248 @@ body .container .container-right-part .cards p {
   text-align: left;
   color: #c5c6ce;
 }
-body .container .container-right-part .line {
+body section .container .container-right-part .line {
   margin-bottom: 31px;
 }
-body .container .container-right-part .card {
+body section .container .container-right-part .card {
   margin-bottom: 0;
+}
+
+section {
+  margin-bottom: 129px;
+}
+section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+section .container .parts {
+  max-width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+}
+section .container .parts img {
+  width: 100px;
+  height: 127px;
+}
+section .container .parts .information h2 {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: left;
+  color: #c5c6ce;
+  margin-bottom: 12px;
+}
+section .container .parts .information h3 {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  text-align: left;
+  color: #00001a;
+  cursor: pointer;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+section .container .parts .information h3:hover {
+  color: #f15d51;
+}
+section .container .parts p {
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color: #5e607a;
+}
+
+@media (max-width: 1030px) {
+  body {
+    min-height: 100vh;
+  }
+  body .container {
+    width: 100%;
+    max-width: 343px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  body header {
+    padding: 28px 0 32px;
+  }
+  body header .container nav {
+    max-width: 40px;
+  }
+  body header .container nav ul li {
+    display: none;
+  }
+  body header .container nav ul img {
+    display: block;
+  }
+  body section {
+    margin-bottom: 64px;
+  }
+  body section .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body section .container .left-part {
+    max-width: 343px;
+    margin-bottom: 64px;
+    width: 100%;
+  }
+  body section .container .left-part img {
+    margin-bottom: 24px;
+    max-width: 343px;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body section .container .left-part .left-part-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body section .container .left-part .left-part-bottom h1 {
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 40px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  body section .container .left-part .left-part-bottom .left-part-bottom-right {
+    max-width: 350px;
+  }
+  body section .container .left-part .left-part-bottom .left-part-bottom-right p {
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    margin-bottom: 24px;
+  }
+  body section .container .left-part .left-part-bottom .left-part-bottom-right button {
+    padding: 13px 31px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 4.375px;
+  }
+  body section .container .container-right-part {
+    width: 100%;
+    max-width: 350px;
+    background: #00001a;
+    padding: 32px 24px;
+  }
+  body section .container .container-right-part h2 {
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: left;
+    color: #e9aa52;
+    margin-bottom: 34px;
+  }
+  body section .container .container-right-part .cards {
+    margin-bottom: 29px;
+  }
+  body section .container .container-right-part .cards h3 {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 24px;
+    text-align: left;
+    color: #fffdfa;
+    margin-bottom: 8px;
+    cursor: pointer;
+    -webkit-transition-duration: 2s;
+            transition-duration: 2s;
+  }
+  body section .container .container-right-part .cards h3:hover {
+    color: #e9aa52;
+  }
+  body section .container .container-right-part .cards p {
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: #c5c6ce;
+  }
+  body section .container .container-right-part .line {
+    margin-bottom: 31px;
+  }
+  body section .container .container-right-part .card {
+    margin-bottom: 0;
+  }
+  section {
+    margin-bottom: 129px;
+  }
+  section .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  section .container .parts {
+    max-width: 350px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 24px;
+  }
+  section .container .parts img {
+    width: 100px;
+    height: 127px;
+  }
+  section .container .parts .information h2 {
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    color: #c5c6ce;
+    margin-bottom: 12px;
+  }
+  section .container .parts .information h3 {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 24px;
+    text-align: left;
+    color: #00001a;
+    cursor: pointer;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+  }
+  section .container .parts .information h3:hover {
+    color: #f15d51;
+  }
+  section .container .parts p {
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: #5e607a;
+  }
 }
