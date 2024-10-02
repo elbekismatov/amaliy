@@ -52,6 +52,20 @@ body header .container nav ul {
 body header .container nav ul img {
   display: none;
 }
+body header .container nav ul a {
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color: #5E607A;
+  cursor: pointer;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+body header .container nav ul a:hover {
+  color: #F15D51;
+}
 body section {
   margin-bottom: 71px;
 }
@@ -74,7 +88,7 @@ body section .container .left-part .left-part-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gp: 30px;
+  gap: 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -112,8 +126,8 @@ body section .container .left-part .left-part-bottom .left-part-bottom-right but
   text-align: left;
   color: #fffdfa;
   cursor: pointer;
-  -webkit-transition-duration: 2s;
-          transition-duration: 2s;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 body section .container .left-part .left-part-bottom .left-part-bottom-right button:hover {
   background: #00001a;
@@ -145,8 +159,8 @@ body section .container .container-right-part .cards h3 {
   color: #fffdfa;
   margin-bottom: 8px;
   cursor: pointer;
-  -webkit-transition-duration: 2s;
-          transition-duration: 2s;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 body section .container .container-right-part .cards h3:hover {
   color: #e9aa52;
